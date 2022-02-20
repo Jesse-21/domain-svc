@@ -190,7 +190,6 @@ console.log(network)
 
   const updateDomain = async () => {
 	if (!record || !domain) { return }
-	setLoading(true);
 	console.log("Updating domain", domain, "with record", record);
   	try {
 		const { ethereum } = window;
@@ -210,7 +209,6 @@ console.log(network)
   	} catch(error) {
     	console.log(error);
   	}
-	setLoading(false);
 }
   
 const mintDomain = async () => {
