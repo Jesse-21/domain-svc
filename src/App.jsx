@@ -14,7 +14,7 @@ import { ethers } from "ethers";
 const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
-const tld = '.space';
+const tld = '.payme';
 const CONTRACT_ADDRESS = '0xebE1Ca853bF937C35F2d1694c8547b6B99e60a05';
 
 const App = () => {
