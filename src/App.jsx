@@ -11,10 +11,10 @@ import contractAbi from './Domains.json';
 import { ethers } from "ethers";
 
 // Constants
-const TWITTER_HANDLE = '_buildspace';
+const TWITTER_HANDLE = 'thirdyxyz';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
-const tld = '.payme';
+const tld = '.thirdy';
 const CONTRACT_ADDRESS = '0xebE1Ca853bF937C35F2d1694c8547b6B99e60a05';
 
 const App = () => {
@@ -348,8 +348,8 @@ const editRecord = (name) => {
 				<div className="header-container">
 					<header>
 						<div className="left">
-						<p className="title">🦁 SPACE Name Service 🦁</p>
-						<p className="subtitle">get your domain now!</p>
+						<p className="title"> Thirdy Domain Registry </p>
+						<p className="subtitle">Mint your .thirdy member domain!</p>
 						</div>
             <div className="right">
 			<img alt="Network logo" className="logo" src={ network.includes("Polygon") ? polygonLogo : ethLogo} />
