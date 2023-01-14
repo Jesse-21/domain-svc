@@ -5,7 +5,7 @@ import twitterLogo from './assets/twitter-logo.svg';
 // At the very top of the file, after the other imports
 import polygonLogo from './assets/polygonlogo.png';
 import ethLogo from './assets/ethlogo.png';
-import tdrlogo from './assets/tdrlogo.png';
+import tdrlogo from 'src/assets/120px-tall-logo-transp--shad.png';
 import { networks } from './utils/networks';
 
 
@@ -350,7 +350,7 @@ const editRecord = (name) => {
 				<div className="header-container">
 					<header>
 						<div className="left">
-						<P><img alt=TDR Logo" classname="logo" src="./assets/tdrlogo.png" width="120px" />
+						<P><img alt=TDR Logo" classname="logo" src="src/assets/120px-tall-logo-transp--shad.png" /> </p>
 						<p className="title"> Thirdy Domain Registry </p>
 						<p className="subtitle">Mint your .thirdy member domain!</p>
 						</div>
