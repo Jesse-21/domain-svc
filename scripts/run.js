@@ -1,8 +1,8 @@
 const main = async () => {
   const [owner, superCoder] = await hre.ethers.getSigners();
   const domainContractFactory = await hre.ethers.getContractFactory('Domains');
-  // We pass in "ninja" to the constructor when deploying
-  const domainContract = await domainContractFactory.deploy("payme");
+  // We pass in "thirdy" to the constructor when deploying
+  const domainContract = await domainContractFactory.deploy("thirdy");
   await domainContract.deployed();
   const domainame = "build"
 
