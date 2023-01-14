@@ -29,10 +29,10 @@ contract Domains is ERC721URIStorage {
     error InvalidName(string name);
 
     // We make the contract "payable" by adding this to the constructor
-    constructor(string memory _tld) ERC721("Space Name Service", "SPC") payable {
+    constructor(string memory _tld) ERC721("Thirdy Domain Registry", "thirdy") payable {
         owner = payable(msg.sender);
         tld = _tld;
-        console.log("%s name service deployed", _tld);
+        console.log("%s domain registry deployed", _tld);
     }
 
     function getAllNames() public view returns (string[] memory) {
@@ -67,7 +67,7 @@ contract Domains is ERC721URIStorage {
         if (!valid(name)) revert InvalidName(name);
 
         uint256 _price = price(name);
-        require(msg.value >= _price, "Not enough Matic paid");
+        require(msg.value >= _price, "When you try and be cheap this happens:  Not enough Matic was paid. ");
 
         // Combine the name passed into the function  with the TLD
         string memory _name = string(abi.encodePacked(name, ".", tld));
@@ -86,7 +86,7 @@ contract Domains is ERC721URIStorage {
                     abi.encodePacked(
                         '{"name": "',
                         _name,
-                        '", "description": "A domain on the Space name service", "image": "data:image/svg+xml;base64,',
+                        '", "description": "A domain from Thirdy Domain Registry", "image": "data:image/svg+xml;base64,',
                         Base64.encode(bytes(finalSvg)),
                         '","length":"',
                         strLen,
@@ -141,7 +141,7 @@ contract Domains is ERC721URIStorage {
         uint amount = address(this).balance;
 
         (bool success,) = msg.sender.call{value : amount}("");
-        require(success, "Failed to withdraw Matic");
+        require(success, "Failed to withdraw Matic.  All matic gnomes are out of the office.");
     }
 
     function valid(string calldata name) public pure returns (bool) {
