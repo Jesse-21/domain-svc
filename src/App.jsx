@@ -5,7 +5,9 @@ import twitterLogo from './assets/twitter-logo.svg';
 // At the very top of the file, after the other imports
 import polygonLogo from './assets/polygonlogo.png';
 import ethLogo from './assets/ethlogo.png';
+import tdrlogo from './assets/tdrlogo.png';
 import { networks } from './utils/networks';
+
 
 import contractAbi from './Domains.json';
 import { ethers } from "ethers";
@@ -348,6 +350,7 @@ const editRecord = (name) => {
 				<div className="header-container">
 					<header>
 						<div className="left">
+						<P><img alt=TDR Logo" classname="logo" src="./assets/tdrlogo.png" width="120px" />
 						<p className="title"> Thirdy Domain Registry </p>
 						<p className="subtitle">Mint your .thirdy member domain!</p>
 						</div>
