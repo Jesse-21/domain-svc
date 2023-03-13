@@ -350,7 +350,7 @@ const editRecord = (name) => {
 				<div className="header-container">
 					<header>
 						<div className="left">
-						<P><img alt=TDR Logo" classname="logo" src="src/assets/120px-tall-logo-transp--shad.png"> </img> </p>
+						<P><img alt="Logo" classname="logo" src="src/assets/120px-tall-logo-transp--shad.png" /> </p>
 						<p className="title"> Thirdy Domain Registry </p>
 						<p className="subtitle">Mint your .thirdy member domain!</p>
 						</div>
