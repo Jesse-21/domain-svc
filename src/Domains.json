@@ -250,7 +250,7 @@
         }
       ],
       "name": "isApprovedForAll",
-      "outputs":[
+      "outputs": [
         {
           "internalType": "bool",
           "name": "",
